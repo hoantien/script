@@ -1,0 +1,1 @@
+adb shell "cd /data; ./isp_app_p1_5_notrst -q”

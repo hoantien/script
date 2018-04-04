@@ -1,0 +1,48 @@
+# Step to test capture Hi-Res
+# 1) Install application
+adb install nothing-but-the-stream-01.apk
+
+# 2) Push mm-qcamera-app and capture_new.sh to /system/bin
+adb remount
+adb push mm-qcamera-app /system/bin
+adb push capture_new.sh /system/bin
+
+# 3) Flashing lastest FPGA Firmware and reboot System
+python camera_script.py -fpga sept19_16cam_24m_16sync_prog_snapshotN_fiforeset.bit
+
+# 4) Flashing CCB firmware and reset STM32
+python camera_script.py -stm LightCCB.bin
+
+$ 5) Turn on FPGA
+adb shell "fpga_on.sh"
+
+# 6) Enable manual mode
+adb shell "echo 1 > /sys/class/light_ccb/common/manual_control"
+
+# 7) Active Preview UCID
+adb shell "echo 2 0x1000 0x00 0x03 > /sys/class/light_ccb/i2c_interface/i2c_w"
+
+# 8) open all cameras(global) and waiting for finish configure new Aptina settings
+adb shell "echo 4 0x0000 0x01 0x00 0x00 0x02 > /sys/class/light_ccb/i2c_interface/i2c_w"
+
+# 9) a1_stream_on.sh (CCB Command) // this will preview A1 on the App
+adb shell "echo 7 0x0002 0x02 0x00 0x00 0x01 0x00 0x00 0x01 > /sys/class/light_ccb/i2c_interface/i2c_w"
+
+# Optional: Setting exposure, gain, vcm ....
+
+# 10) Run the application to preview streaming, In this case, application is nothing-but-the-stream-01.apk
+
+# 11) Run the prep_capture.sh to prepare the camera for capture
+#adb shell "sh /data/prep_capture.sh AB" 
+sh prep_capture.sh AB
+
+# 12) Run the capture_new.sh (./capture_new.sh AB restore test)
+#adb shell "sh /data/capture_new.sh AB restore test"
+sh capture_new.sh AB test /sdcard/DCIM/rdi/ trigger
+
+# 13) This app should create the rdi file dumped at /mnt/sdcard/DCIM/rdi/<timestamp>
+# Pull the rdi raw file in /sdcard/rdi/<time_stamp> to PC,
+# Split raw file, do quick-phase for each of file was split.
+python ../split_image.py -f AB_test.raw -g AB
+../quick_phase/quick_phase --fmt=5 -x AB_test_*.raw
+# View the raw file using the UFRAW ultility.​

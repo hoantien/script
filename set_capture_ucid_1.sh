@@ -1,0 +1,23 @@
+echo "Setting Active UCID Hi-Res"
+echo 2 0x1000 0x00 0x05 > /sys/class/light_ccb/i2c_interface/i2c_w
+busybox usleep 100000
+
+echo "CAM STREAMING CMD for UCID Snapshot"
+
+    module_bitmask=""
+    if [ "$1" = "ab" ] || [ "$1" = "AB" ]; then
+        # AB:
+        module_bitmask="0xFE 0x07 0x00"
+    elif [ "$1" = "bc" ] || [ "$1" = "BC" ]; then
+        # BC:
+        module_bitmask="0xC0 0xFF 0x00"
+    elif [ "$1" = "c" ] || [ "$1" = "C" ]; then
+        # C:
+        module_bitmask="0x00 0xF8 0x01"
+    fi
+    echo module_bitmask is:
+    echo $module_bitmask
+
+    echo 34 0x0002 $module_bitmask 0x01 0x00 0x00 0x01 0x00 0x00 0x01 0x00 0x00 0x01 0x00 0x00 0x01 0x00 0x00 0x01 \
+                                       0x00 0x00 0x01 0x00 0x00 0x01 0x00 0x00 0x01 0x00 0x00 0x01 0x00 0x00 0x01 \
+                                       > /sys/class/light_ccb/i2c_interface/i2c_w

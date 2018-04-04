@@ -1,0 +1,626 @@
+============================================
+
+--------------------------------------------
+ $$                                        
+ $$                    $$            $     
+ $$                    $$           $$     
+ $$                    $$           $$     
+ $$            $$$     $$           $$$$$  
+ $$    $$     $ $$$    $$  $$$      $$$$$  
+ $$    $$    $   $$$   $$ $ $$$     $$     
+ $$    $$   $$    $$   $$$   $$$    $$     
+ $$    $$   $$    $$   $$     $$    $$     
+ $$    $$    $$  $$    $$     $$    $$$ $  
+ $$    $$     $$$$     $$     $$     $$$   
+                                           
+                  $ $$                     
+                $$   $$                    
+                $$   $$                    
+                  $$$                      
+
+-------------------------------------------
+
+  Build ID: 0d00007b 
+  Build time: Thu Apr 28 15:27:44 2016 
+  CPLD version: 11.02 
+============================================
+
+Current level value [0x03]
+Log level value [0x1f] written!
+[DEBUG: vTask_SNAP_SPISLAVE] Reached CMD_RX case
+[DEBUG: vCamController] Command received! Command ID = 1000
+
+[DEBUG: vCamController] 0x8 is Interrupt enabled ? YES 
+
+
+[DEBUG: vCamController] Received active ucid: 9
+[DEBUG: vCamController] Generating Interrupt
+ 
+[DEBUG: get_interrupt_mask] setting the interrupt to 0x10000
+
+
+[DEBUG: vCamController] Generated Interrupt
+ 
+[DEBUG: vCamController] Command received! Command ID = 0
+
+[DEBUG: vCamController] 0x8 is Interrupt enabled ? YES 
+
+
+[INFO: cam_module_open_iterate] 0: Putting CAM_A1 into SW_STANDBY!
+
+[DEBUG: af_controller_init] Initializing VCM on channel 1
+
+ VLC898214 Version check : 42
+Finish initializing AF module. Current: 0xb460
+
+[DEBUG: af_controller_read_eeprom] Addr: 25 Value: 0xd2
+[DEBUG: af_controller_read_eeprom] Addr: 26 Value: 0x0
+[DEBUG: af_controller_read_eeprom] Addr: 27 Value: 0x1a
+[DEBUG: af_controller_read_eeprom] Addr: 28 Value: 0x80
+[DEBUG: SetupLensPositionTable] (25)
+[DEBUG: SetupLensPositionTable] (65): i=0 pos=3.-11779000  dac=-11776.000
+[DEBUG: SetupLensPositionTable] (65): i=1 pos=3.6781000  dac=6784.000
+[DEBUG: PrintInterpTable] InterpTable:
+[DEBUG: PrintInterpTable]   DataType: 1
+[DEBUG: PrintInterpTable]   Size:     2
+[DEBUG: PrintInterpTable]   Table[0]: x = 3.684  y = 6784.000
+[DEBUG: PrintInterpTable]   Table[1]: x = 3.819  y = -11776.000
+[DEBUG: SetupLensPositionTable] (72): SetupInterpFloatTable() returned 1
+[INFO: cam_module_open_iterate] 1: Putting CAM_A2 into SW_STANDBY!
+
+[DEBUG: af_controller_init] Initializing VCM on channel 2
+
+ VLC898214 Version check : 42
+Finish initializing AF module. Current: 0xbc20
+
+[DEBUG: af_controller_read_eeprom] Addr: 25 Value: 0xd4
+[DEBUG: af_controller_read_eeprom] Addr: 26 Value: 0x0
+[DEBUG: af_controller_read_eeprom] Addr: 27 Value: 0x1f
+[DEBUG: af_controller_read_eeprom] Addr: 28 Value: 0x80
+[DEBUG: SetupLensPositionTable] (25)
+[DEBUG: SetupLensPositionTable] (65): i=0 pos=3.-11267000  dac=-11264.000
+[DEBUG: SetupLensPositionTable] (65): i=1 pos=3.8061000  dac=8064.000
+[DEBUG: PrintInterpTable] InterpTable:
+[DEBUG: PrintInterpTable]   DataType: 1
+[DEBUG: PrintInterpTable]   Size:     2
+[DEBUG: PrintInterpTable]   Table[0]: x = 3.684  y = 8064.000
+[DEBUG: PrintInterpTable]   Table[1]: x = 3.819  y = -11264.000
+[DEBUG: SetupLensPositionTable] (72): SetupInterpFloatTable() returned 1
+[INFO: cam_module_open_iterate] 2: Putting CAM_A3 into SW_STANDBY!
+
+[DEBUG: af_controller_init] Initializing VCM on channel 3
+
+ VLC898214 Version check : 42
+Finish initializing AF module. Current: 0xa5c6
+
+[DEBUG: af_controller_read_eeprom] Addr: 25 Value: 0xc7
+[DEBUG: af_controller_read_eeprom] Addr: 26 Value: 0x0
+[DEBUG: af_controller_read_eeprom] Addr: 27 Value: 0x14
+[DEBUG: af_controller_read_eeprom] Addr: 28 Value: 0x0
+[DEBUG: SetupLensPositionTable] (25)
+[DEBUG: SetupLensPositionTable] (65): i=0 pos=3.-14595000  dac=-14592.000
+[DEBUG: SetupLensPositionTable] (65): i=1 pos=3.5117000  dac=5120.000
+[DEBUG: PrintInterpTable] InterpTable:
+[DEBUG: PrintInterpTable]   DataType: 1
+[DEBUG: PrintInterpTable]   Size:     2
+[DEBUG: PrintInterpTable]   Table[0]: x = 3.684  y = 5120.000
+[DEBUG: PrintInterpTable]   Table[1]: x = 3.819  y = -14592.000
+[DEBUG: SetupLensPositionTable] (72): SetupInterpFloatTable() returned 1
+[INFO: cam_module_open_iterate] 3: Putting CAM_A4 into SW_STANDBY!
+
+[DEBUG: af_controller_init] Initializing VCM on channel 4
+
+ VLC898214 Version check : 42
+Finish initializing AF module. Current: 0xaad7
+
+[DEBUG: af_controller_read_eeprom] Addr: 25 Value: 0xd7
+[DEBUG: af_controller_read_eeprom] Addr: 26 Value: 0x80
+[DEBUG: af_controller_read_eeprom] Addr: 27 Value: 0x23
+[DEBUG: af_controller_read_eeprom] Addr: 28 Value: 0x0
+[DEBUG: SetupLensPositionTable] (25)
+[DEBUG: SetupLensPositionTable] (65): i=0 pos=3.-10371000  dac=-10368.000
+[DEBUG: SetupLensPositionTable] (65): i=1 pos=3.8957000  dac=8960.000
+[DEBUG: PrintInterpTable] InterpTable:
+[DEBUG: PrintInterpTable]   DataType: 1
+[DEBUG: PrintInterpTable]   Size:     2
+[DEBUG: PrintInterpTable]   Table[0]: x = 3.684  y = 8960.000
+[DEBUG: PrintInterpTable]   Table[1]: x = 3.819  y = -10368.000
+[DEBUG: SetupLensPositionTable] (72): SetupInterpFloatTable() returned 1
+[INFO: cam_module_open_iterate] 4: Putting CAM_A5 into SW_STANDBY!
+
+[DEBUG: af_controller_init] Initializing VCM on channel 5
+
+ VLC898214 Version check : 42
+Finish initializing AF module. Current: 0xa714
+
+[DEBUG: af_controller_read_eeprom] Addr: 25 Value: 0xe6
+[DEBUG: af_controller_read_eeprom] Addr: 26 Value: 0x80
+[DEBUG: af_controller_read_eeprom] Addr: 27 Value: 0x28
+[DEBUG: af_controller_read_eeprom] Addr: 28 Value: 0x80
+[DEBUG: SetupLensPositionTable] (25)
+[DEBUG: SetupLensPositionTable] (65): i=0 pos=3.-6531000  dac=-6528.000
+[DEBUG: SetupLensPositionTable] (65): i=1 pos=3.10365000  dac=10368.000
+[DEBUG: PrintInterpTable] InterpTable:
+[DEBUG: PrintInterpTable]   DataType: 1
+[DEBUG: PrintInterpTable]   Size:     2
+[DEBUG: PrintInterpTable]   Table[0]: x = 3.684  y = 10368.000
+[DEBUG: PrintInterpTable]   Table[1]: x = 3.819  y = -6528.000
+[DEBUG: SetupLensPositionTable] (72): SetupInterpFloatTable() returned 1
+[INFO: cam_module_open_iterate] 5: Putting CAM_B1 into SW_STANDBY!
+
+[INFO: cam_module_open_iterate] 6: Putting CAM_B2 into SW_STANDBY!
+
+[INFO: cam_module_open_iterate] 7: Putting CAM_B3 into SW_STANDBY!
+
+[INFO: cam_module_open_iterate] 8: Putting CAM_B4 into SW_STANDBY!
+
+[INFO: cam_module_open_iterate] 9: Putting CAM_B5 into SW_STANDBY!
+
+[INFO: cam_module_open_iterate] 10: Putting CAM_C1 into SW_STANDBY!
+
+[INFO: cam_module_open_iterate] 11: Putting CAM_C2 into SW_STANDBY!
+
+[INFO: cam_module_open_iterate] 12: Putting CAM_C3 into SW_STANDBY!
+
+[INFO: cam_module_open_iterate] 13: Putting CAM_C4 into SW_STANDBY!
+
+[INFO: cam_module_open_iterate] 14: Putting CAM_C5 into SW_STANDBY!
+
+[INFO: cam_module_open_iterate] 15: Putting CAM_C6 into SW_STANDBY!
+
+[INFO: write_xshutdown_signal] sw_standby_slave_order = ffff
+
+[DEBUG: SensorsSetting] 10 transactions
+[DEBUG: SensorsSetting] 20 transactions
+[DEBUG: SensorsSetting] 30 transactions
+[DEBUG: SensorsSetting] 40 transactions
+[DEBUG: SensorsSetting] 50 transactions
+[DEBUG: SensorsSetting] 60 transactions
+[DEBUG: SensorsSetting] 70 transactions
+[DEBUG: SensorsSetting] 80 transactions
+[DEBUG: SensorsSetting] 90 transactions
+[DEBUG: SensorsSetting] 100 transactions
+[DEBUG: SensorsSetting] 110 transactions
+[DEBUG: SensorsSetting] 120 transactions
+[DEBUG: SensorsSetting] 130 transactions
+[DEBUG: SensorsSetting] 140 transactions
+[DEBUG: SensorsSetting] 150 transactions
+[DEBUG: SensorsSetting] 160 transactions
+[DEBUG: SensorsSetting] 170 transactions
+[DEBUG: SensorsSetting] 180 transactions
+[DEBUG: SensorsSetting] 190 transactions
+[DEBUG: SensorsSetting] 200 transactions
+[DEBUG: SensorsSetting] 210 transactions
+[DEBUG: SensorsSetting] 220 transactions
+[DEBUG: SensorsSetting] 230 transactions
+[DEBUG: SensorsSetting] 240 transactions
+[DEBUG: SensorsSetting] 250 transactions
+[DEBUG: SensorsSetting] 260 transactions
+[DEBUG: SensorsSetting] 270 transactions
+[DEBUG: SensorsSetting] 280 transactions
+[DEBUG: cam_module_open_apply] CAM_A1 
+
+[DEBUG: Set_Resolution] Entered Set_Resolution 
+[DEBUG: resolution_selection] stream_type id 0
+
+[DEBUG: SensorConfig] Entered SensorConfig 
+[DEBUG: SensorConfig] 10 transactions
+[DEBUG: SensorConfig] 20 transactions
+[DEBUG: SensorConfig] 30 transactions
+[DEBUG: SensorConfig] Exiting SensorConfig 
+[DEBUG: ConfigureSensorFlips] Entered ConfigureSensorFlips 
+[DEBUG: SensorConfig] Entered SensorConfig 
+[DEBUG: SensorConfig] Exiting SensorConfig 
+[DEBUG: ConfigureSensorFlips] Exiting ConfigureSensorFlips 
+[INFO: Set_Resolution] [CAM_A1] Set resolution to [0x1070 - 0xc30] success
+[DEBUG: Set_Resolution] Exiting Set_Resolution 
+[DEBUG: cam_module_open_apply] CAM_A2 
+
+[DEBUG: Set_Resolution] Entered Set_Resolution 
+[DEBUG: resolution_selection] stream_type id 0
+
+[DEBUG: SensorConfig] Entered SensorConfig 
+[DEBUG: SensorConfig] 10 transactions
+[DEBUG: SensorConfig] 20 transactions
+[DEBUG: SensorConfig] 30 transactions
+[DEBUG: SensorConfig] Exiting SensorConfig 
+[DEBUG: ConfigureSensorFlips] Entered ConfigureSensorFlips 
+[DEBUG: SensorConfig] Entered SensorConfig 
+[DEBUG: SensorConfig] Exiting SensorConfig 
+[DEBUG: ConfigureSensorFlips] Exiting ConfigureSensorFlips 
+[INFO: Set_Resolution] [CAM_A2] Set resolution to [0x1070 - 0xc30] success
+[DEBUG: Set_Resolution] Exiting Set_Resolution 
+[DEBUG: cam_module_open_apply] CAM_A3 
+
+[DEBUG: Set_Resolution] Entered Set_Resolution 
+[DEBUG: resolution_selection] stream_type id 0
+
+[DEBUG: SensorConfig] Entered SensorConfig 
+[DEBUG: SensorConfig] 10 transactions
+[DEBUG: SensorConfig] 20 transactions
+[DEBUG: SensorConfig] 30 transactions
+[DEBUG: SensorConfig] Exiting SensorConfig 
+[DEBUG: ConfigureSensorFlips] Entered ConfigureSensorFlips 
+[DEBUG: SensorConfig] Entered SensorConfig 
+[DEBUG: SensorConfig] Exiting SensorConfig 
+[DEBUG: ConfigureSensorFlips] Exiting ConfigureSensorFlips 
+[INFO: Set_Resolution] [CAM_A3] Set resolution to [0x1070 - 0xc30] success
+[DEBUG: Set_Resolution] Exiting Set_Resolution 
+[DEBUG: cam_module_open_apply] CAM_A4 
+
+[DEBUG: Set_Resolution] Entered Set_Resolution 
+[DEBUG: resolution_selection] stream_type id 0
+
+[DEBUG: SensorConfig] Entered SensorConfig 
+[DEBUG: SensorConfig] 10 transactions
+[DEBUG: SensorConfig] 20 transactions
+[DEBUG: SensorConfig] 30 transactions
+[DEBUG: SensorConfig] Exiting SensorConfig 
+[DEBUG: ConfigureSensorFlips] Entered ConfigureSensorFlips 
+[DEBUG: SensorConfig] Entered SensorConfig 
+[DEBUG: SensorConfig] Exiting SensorConfig 
+[DEBUG: ConfigureSensorFlips] Exiting ConfigureSensorFlips 
+[INFO: Set_Resolution] [CAM_A4] Set resolution to [0x1070 - 0xc30] success
+[DEBUG: Set_Resolution] Exiting Set_Resolution 
+[DEBUG: cam_module_open_apply] CAM_A5 
+
+[DEBUG: Set_Resolution] Entered Set_Resolution 
+[DEBUG: resolution_selection] stream_type id 0
+
+[DEBUG: SensorConfig] Entered SensorConfig 
+[DEBUG: SensorConfig] 10 transactions
+[DEBUG: SensorConfig] 20 transactions
+[DEBUG: SensorConfig] 30 transactions
+[DEBUG: SensorConfig] Exiting SensorConfig 
+[DEBUG: ConfigureSensorFlips] Entered ConfigureSensorFlips 
+[DEBUG: SensorConfig] Entered SensorConfig 
+[DEBUG: SensorConfig] Exiting SensorConfig 
+[DEBUG: ConfigureSensorFlips] Exiting ConfigureSensorFlips 
+[INFO: Set_Resolution] [CAM_A5] Set resolution to [0x1070 - 0xc30] success
+[DEBUG: Set_Resolution] Exiting Set_Resolution 
+[DEBUG: cam_module_open_apply] CAM_B1 
+
+[DEBUG: Set_Resolution] Entered Set_Resolution 
+[DEBUG: resolution_selection] stream_type id 0
+
+[DEBUG: SensorConfig] Entered SensorConfig 
+[DEBUG: SensorConfig] 10 transactions
+[DEBUG: SensorConfig] 20 transactions
+[DEBUG: SensorConfig] 30 transactions
+[DEBUG: SensorConfig] Exiting SensorConfig 
+[DEBUG: ConfigureSensorFlips] Entered ConfigureSensorFlips 
+[DEBUG: SensorConfig] Entered SensorConfig 
+[DEBUG: SensorConfig] Exiting SensorConfig 
+[DEBUG: ConfigureSensorFlips] Exiting ConfigureSensorFlips 
+[INFO: Set_Resolution] [CAM_B1] Set resolution to [0x1070 - 0xc30] success
+[DEBUG: Set_Resolution] Exiting Set_Resolution 
+[DEBUG: cam_module_open_apply] CAM_B2 
+
+[DEBUG: Set_Resolution] Entered Set_Resolution 
+[DEBUG: resolution_selection] stream_type id 0
+
+[DEBUG: SensorConfig] Entered SensorConfig 
+[DEBUG: SensorConfig] 10 transactions
+[DEBUG: SensorConfig] 20 transactions
+[DEBUG: SensorConfig] 30 transactions
+[DEBUG: SensorConfig] Exiting SensorConfig 
+[DEBUG: ConfigureSensorFlips] Entered ConfigureSensorFlips 
+[DEBUG: SensorConfig] Entered SensorConfig 
+[DEBUG: SensorConfig] Exiting SensorConfig 
+[DEBUG: IncrementSensorReg] Entered IncrementSensorReg 
+[DEBUG: IncrementSensorReg]   Register address = 0x0346	Register value = 0x0011
+[DEBUG: IncrementSensorReg] Exiting IncrementSensorReg 
+[DEBUG: IncrementSensorReg] Entered IncrementSensorReg 
+[DEBUG: IncrementSensorReg]   Register address = 0x034a	Register value = 0x0c40
+[DEBUG: IncrementSensorReg] Exiting IncrementSensorReg 
+[DEBUG: SensorConfig] Entered SensorConfig 
+[DEBUG: SensorConfig] Exiting SensorConfig 
+[DEBUG: ConfigureSensorFlips] Exiting ConfigureSensorFlips 
+[INFO: Set_Resolution] [CAM_B2] Set resolution to [0x1070 - 0xc30] success
+[DEBUG: Set_Resolution] Exiting Set_Resolution 
+[DEBUG: cam_module_open_apply] CAM_B3 
+
+[DEBUG: Set_Resolution] Entered Set_Resolution 
+[DEBUG: resolution_selection] stream_type id 0
+
+[DEBUG: SensorConfig] Entered SensorConfig 
+[DEBUG: SensorConfig] 10 transactions
+[DEBUG: SensorConfig] 20 transactions
+[DEBUG: SensorConfig] 30 transactions
+[DEBUG: SensorConfig] Exiting SensorConfig 
+[DEBUG: ConfigureSensorFlips] Entered ConfigureSensorFlips 
+[DEBUG: SensorConfig] Entered SensorConfig 
+[DEBUG: SensorConfig] Exiting SensorConfig 
+[DEBUG: IncrementSensorReg] Entered IncrementSensorReg 
+[DEBUG: IncrementSensorReg]   Register address = 0x0346	Register value = 0x0011
+[DEBUG: IncrementSensorReg] Exiting IncrementSensorReg 
+[DEBUG: IncrementSensorReg] Entered IncrementSensorReg 
+[DEBUG: IncrementSensorReg]   Register address = 0x034a	Register value = 0x0c40
+[DEBUG: IncrementSensorReg] Exiting IncrementSensorReg 
+[DEBUG: SensorConfig] Entered SensorConfig 
+[DEBUG: SensorConfig] Exiting SensorConfig 
+[DEBUG: ConfigureSensorFlips] Exiting ConfigureSensorFlips 
+[INFO: Set_Resolution] [CAM_B3] Set resolution to [0x1070 - 0xc30] success
+[DEBUG: Set_Resolution] Exiting Set_Resolution 
+[DEBUG: cam_module_open_apply] CAM_B4 
+
+[DEBUG: Set_Resolution] Entered Set_Resolution 
+[DEBUG: resolution_selection] stream_type id 0
+
+[DEBUG: SensorConfig] Entered SensorConfig 
+[DEBUG: SensorConfig] 10 transactions
+[DEBUG: SensorConfig] 20 transactions
+[DEBUG: SensorConfig] 30 transactions
+[DEBUG: SensorConfig] Exiting SensorConfig 
+[DEBUG: ConfigureSensorFlips] Entered ConfigureSensorFlips 
+[DEBUG: SensorConfig] Entered SensorConfig 
+[DEBUG: SensorConfig] Exiting SensorConfig 
+[DEBUG: IncrementSensorReg] Entered IncrementSensorReg 
+[DEBUG: IncrementSensorReg]   Register address = 0x0346	Register value = 0x0011
+[DEBUG: IncrementSensorReg] Exiting IncrementSensorReg 
+[DEBUG: IncrementSensorReg] Entered IncrementSensorReg 
+[DEBUG: IncrementSensorReg]   Register address = 0x034a	Register value = 0x0c40
+[DEBUG: IncrementSensorReg] Exiting IncrementSensorReg 
+[DEBUG: SensorConfig] Entered SensorConfig 
+[DEBUG: SensorConfig] Exiting SensorConfig 
+[DEBUG: ConfigureSensorFlips] Exiting ConfigureSensorFlips 
+[INFO: Set_Resolution] [CAM_B4] Set resolution to [0x1070 - 0xc30] success
+[DEBUG: Set_Resolution] Exiting Set_Resolution 
+[DEBUG: cam_module_open_apply] CAM_B5 
+
+[DEBUG: Set_Resolution] Entered Set_Resolution 
+[DEBUG: resolution_selection] stream_type id 0
+
+[DEBUG: SensorConfig] Entered SensorConfig 
+[DEBUG: SensorConfig] 10 transactions
+[DEBUG: SensorConfig] 20 transactions
+[DEBUG: SensorConfig] 30 transactions
+[DEBUG: SensorConfig] Exiting SensorConfig 
+[DEBUG: ConfigureSensorFlips] Entered ConfigureSensorFlips 
+[DEBUG: SensorConfig] Entered SensorConfig 
+[DEBUG: SensorConfig] Exiting SensorConfig 
+[DEBUG: ConfigureSensorFlips] Exiting ConfigureSensorFlips 
+[INFO: Set_Resolution] [CAM_B5] Set resolution to [0x1070 - 0xc30] success
+[DEBUG: Set_Resolution] Exiting Set_Resolution 
+[DEBUG: cam_module_open_apply] CAM_C1 
+
+[DEBUG: Set_Resolution] Entered Set_Resolution 
+[DEBUG: resolution_selection] stream_type id 0
+
+[DEBUG: SensorConfig] Entered SensorConfig 
+[DEBUG: SensorConfig] 10 transactions
+[DEBUG: SensorConfig] 20 transactions
+[DEBUG: SensorConfig] 30 transactions
+[DEBUG: SensorConfig] Exiting SensorConfig 
+[DEBUG: ConfigureSensorFlips] Entered ConfigureSensorFlips 
+[DEBUG: SensorConfig] Entered SensorConfig 
+[DEBUG: SensorConfig] Exiting SensorConfig 
+[DEBUG: ConfigureSensorFlips] Exiting ConfigureSensorFlips 
+[INFO: Set_Resolution] [CAM_C1] Set resolution to [0x1070 - 0xc30] success
+[DEBUG: Set_Resolution] Exiting Set_Resolution 
+[DEBUG: cam_module_open_apply] CAM_C2 
+
+[DEBUG: Set_Resolution] Entered Set_Resolution 
+[DEBUG: resolution_selection] stream_type id 0
+
+[DEBUG: SensorConfig] Entered SensorConfig 
+[DEBUG: SensorConfig] 10 transactions
+[DEBUG: SensorConfig] 20 transactions
+[DEBUG: SensorConfig] 30 transactions
+[DEBUG: SensorConfig] Exiting SensorConfig 
+[DEBUG: ConfigureSensorFlips] Entered ConfigureSensorFlips 
+[DEBUG: SensorConfig] Entered SensorConfig 
+[DEBUG: SensorConfig] Exiting SensorConfig 
+[DEBUG: IncrementSensorReg] Entered IncrementSensorReg 
+[DEBUG: IncrementSensorReg]   Register address = 0x0346	Register value = 0x0011
+[DEBUG: IncrementSensorReg] Exiting IncrementSensorReg 
+[DEBUG: IncrementSensorReg] Entered IncrementSensorReg 
+[DEBUG: IncrementSensorReg]   Register address = 0x034a	Register value = 0x0c40
+[DEBUG: IncrementSensorReg] Exiting IncrementSensorReg 
+[DEBUG: SensorConfig] Entered SensorConfig 
+[DEBUG: SensorConfig] Exiting SensorConfig 
+[DEBUG: ConfigureSensorFlips] Exiting ConfigureSensorFlips 
+[INFO: Set_Resolution] [CAM_C2] Set resolution to [0x1070 - 0xc30] success
+[DEBUG: Set_Resolution] Exiting Set_Resolution 
+[DEBUG: cam_module_open_apply] CAM_C3 
+
+[DEBUG: Set_Resolution] Entered Set_Resolution 
+[DEBUG: resolution_selection] stream_type id 0
+
+[DEBUG: SensorConfig] Entered SensorConfig 
+[DEBUG: SensorConfig] 10 transactions
+[DEBUG: SensorConfig] 20 transactions
+[DEBUG: SensorConfig] 30 transactions
+[DEBUG: SensorConfig] Exiting SensorConfig 
+[DEBUG: ConfigureSensorFlips] Entered ConfigureSensorFlips 
+[DEBUG: SensorConfig] Entered SensorConfig 
+[DEBUG: SensorConfig] Exiting SensorConfig 
+[DEBUG: ConfigureSensorFlips] Exiting ConfigureSensorFlips 
+[INFO: Set_Resolution] [CAM_C3] Set resolution to [0x1070 - 0xc30] success
+[DEBUG: Set_Resolution] Exiting Set_Resolution 
+[DEBUG: cam_module_open_apply] CAM_C4 
+
+[DEBUG: Set_Resolution] Entered Set_Resolution 
+[DEBUG: resolution_selection] stream_type id 0
+
+[DEBUG: SensorConfig] Entered SensorConfig 
+[DEBUG: SensorConfig] 10 transactions
+[DEBUG: SensorConfig] 20 transactions
+[DEBUG: SensorConfig] 30 transactions
+[DEBUG: SensorConfig] Exiting SensorConfig 
+[DEBUG: ConfigureSensorFlips] Entered ConfigureSensorFlips 
+[DEBUG: SensorConfig] Entered SensorConfig 
+[DEBUG: SensorConfig] Exiting SensorConfig 
+[DEBUG: IncrementSensorReg] Entered IncrementSensorReg 
+[DEBUG: IncrementSensorReg]   Register address = 0x0346	Register value = 0x0011
+[DEBUG: IncrementSensorReg] Exiting IncrementSensorReg 
+[DEBUG: IncrementSensorReg] Entered IncrementSensorReg 
+[DEBUG: IncrementSensorReg]   Register address = 0x034a	Register value = 0x0c40
+[DEBUG: IncrementSensorReg] Exiting IncrementSensorReg 
+[DEBUG: SensorConfig] Entered SensorConfig 
+[DEBUG: SensorConfig] Exiting SensorConfig 
+[DEBUG: ConfigureSensorFlips] Exiting ConfigureSensorFlips 
+[INFO: Set_Resolution] [CAM_C4] Set resolution to [0x1070 - 0xc30] success
+[DEBUG: Set_Resolution] Exiting Set_Resolution 
+[DEBUG: cam_module_open_apply] CAM_C5 
+
+[DEBUG: Set_Resolution] Entered Set_Resolution 
+[DEBUG: resolution_selection] stream_type id 0
+
+[DEBUG: SensorConfig] Entered SensorConfig 
+[DEBUG: SensorConfig] 10 transactions
+[DEBUG: SensorConfig] 20 transactions
+[DEBUG: SensorConfig] 30 transactions
+[DEBUG: SensorConfig] Exiting SensorConfig 
+[DEBUG: ConfigureSensorFlips] Entered ConfigureSensorFlips 
+[DEBUG: SensorConfig] Entered SensorConfig 
+[DEBUG: SensorConfig] Exiting SensorConfig 
+[DEBUG: IncrementSensorReg] Entered IncrementSensorReg 
+[DEBUG: IncrementSensorReg]   Register address = 0x0346	Register value = 0x0011
+[DEBUG: IncrementSensorReg] Exiting IncrementSensorReg 
+[DEBUG: IncrementSensorReg] Entered IncrementSensorReg 
+[DEBUG: IncrementSensorReg]   Register address = 0x034a	Register value = 0x0c40
+[DEBUG: IncrementSensorReg] Exiting IncrementSensorReg 
+[DEBUG: SensorConfig] Entered SensorConfig 
+[DEBUG: SensorConfig] Exiting SensorConfig 
+[DEBUG: ConfigureSensorFlips] Exiting ConfigureSensorFlips 
+[INFO: Set_Resolution] [CAM_C5] Set resolution to [0x1070 - 0xc30] success
+[DEBUG: Set_Resolution] Exiting Set_Resolution 
+[DEBUG: cam_module_open_apply] CAM_C6 
+
+[DEBUG: Set_Resolution] Entered Set_Resolution 
+[DEBUG: resolution_selection] stream_type id 0
+
+[DEBUG: SensorConfig] Entered SensorConfig 
+[DEBUG: SensorConfig] 10 transactions
+[DEBUG: SensorConfig] 20 transactions
+[DEBUG: SensorConfig] 30 transactions
+[DEBUG: SensorConfig] Exiting SensorConfig 
+[DEBUG: ConfigureSensorFlips] Entered ConfigureSensorFlips 
+[DEBUG: SensorConfig] Entered SensorConfig 
+[DEBUG: SensorConfig] Exiting SensorConfig 
+[DEBUG: IncrementSensorReg] Entered IncrementSensorReg 
+[DEBUG: IncrementSensorReg]   Register address = 0x0346	Register value = 0x0011
+[DEBUG: IncrementSensorReg] Exiting IncrementSensorReg 
+[DEBUG: IncrementSensorReg] Entered IncrementSensorReg 
+[DEBUG: IncrementSensorReg]   Register address = 0x034a	Register value = 0x0c40
+[DEBUG: IncrementSensorReg] Exiting IncrementSensorReg 
+[DEBUG: SensorConfig] Entered SensorConfig 
+[DEBUG: SensorConfig] Exiting SensorConfig 
+[DEBUG: ConfigureSensorFlips] Exiting ConfigureSensorFlips 
+[INFO: Set_Resolution] [CAM_C6] Set resolution to [0x1070 - 0xc30] success
+[DEBUG: Set_Resolution] Exiting Set_Resolution 
+[DEBUG: FTM_cam_modules] Entered FTM_cam_modules 
+[DEBUG: fpga_check_cam_pg] Entered fpga_check_cam_pg 
+[DEBUG: fpga_check_cam_pg] Exiting fpga_check_cam_pg 
+----Hall sensor
+
+[CAM_B4 - LENS] Connected
+
+[CAM_B4 - MIRR] Connected
+
+[CAM_B5 - LENS] Connected
+
+[CAM_B5 - MIRR] Connected
+
+[CAM_B3 - LENS] Connected
+
+[CAM_B3 - MIRR] Connected
+
+[CAM_B2 - LENS] Connected
+
+[CAM_B2 - MIRR] Connected
+
+[CAM_B1 - LENS] Connected
+
+[CAM_B1 - MIRR] Connected
+
+[CAM_C1 - LENS] Connected
+
+[CAM_C1 - MIRR] Connected
+
+[CAM_C2 - LENS] Connected
+
+[CAM_C2 - MIRR] Connected
+
+[CAM_C3 - LENS] Connected
+
+[CAM_C3 - MIRR] Connected
+
+[CAM_C4 - LENS] Connected
+
+[CAM_C4 - MIRR] Connected
+
+[CAM_C5 - LENS] Connected
+
+[CAM_C5 - MIRR] Connected
+
+[CAM_C6 - LENS] Connected
+
+[CAM_C6 - MIRR] Connected
+
+----FPGA
+
+[DEBUG: fpga_check_pg] Entered fpga_check_pg 
+[DEBUG: fpga_check_pg] Exiting fpga_check_pg 
+Waiting for FPGA init sensor . . .
+
+FPGA returned: 
+[0xffff]
+[0xffff]
+[0xffff]
+[0xffff]
+[0xffff]
+[0xffff]
+[0xffff]
+[0xffff]
+[0xffff]
+[0xffff]
+[0xffff]
+[0xffff]
+[0xffff]
+[0xffff]
+[0xffff]
+[0xffff]
+
+
+[DEBUG: FTM_cam_modules] DeviceID[CAM_A2]: ffff
+
+[DEBUG: FTM_cam_modules] DeviceID[CAM_A1]: ffff
+
+[DEBUG: FTM_cam_modules] DeviceID[CAM_A4]: ffff
+
+[DEBUG: FTM_cam_modules] DeviceID[CAM_A5]: ffff
+
+[DEBUG: FTM_cam_modules] DeviceID[CAM_A3]: ffff
+
+[DEBUG: FTM_cam_modules] DeviceID[CAM_B4]: ffff
+
+[DEBUG: FTM_cam_modules] DeviceID[CAM_B5]: ffff
+
+[DEBUG: FTM_cam_modules] DeviceID[CAM_B3]: ffff
+
+[DEBUG: FTM_cam_modules] DeviceID[CAM_B2]: ffff
+
+[DEBUG: FTM_cam_modules] DeviceID[CAM_B1]: ffff
+
+[DEBUG: FTM_cam_modules] DeviceID[CAM_C1]: ffff
+
+[DEBUG: FTM_cam_modules] DeviceID[CAM_C2]: ffff
+
+[DEBUG: FTM_cam_modules] DeviceID[CAM_C4]: ffff
+
+[DEBUG: FTM_cam_modules] DeviceID[CAM_C3]: ffff
+
+[DEBUG: FTM_cam_modules] DeviceID[CAM_C6]: ffff
+
+[DEBUG: FTM_cam_modules] DeviceID[CAM_C5]: ffff
+
+[DEBUG: FTM_cam_modules] Exiting FTM_cam_modules 
+[DEBUG: vCamController] Generating Interrupt
+ 
+[DEBUG: get_interrupt_mask] setting the interrupt to 0x10000
+
+
+[DEBUG: vCamController] Generated Interrupt
+ 

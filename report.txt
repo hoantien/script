@@ -1,0 +1,8 @@
+Test report
+....................................................
+Capture PASS 1
+Capture PASS
+Capture PASS 3
+Capture PASS 4
+Capture PASS 5
+Capture PASS 6

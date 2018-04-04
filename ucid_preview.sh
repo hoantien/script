@@ -1,0 +1,1 @@
+adb shell "echo 4 0x0000 0x00 0x90 0x03 0x00 > /sys/class/light_ccb/i2c_interface/i2c_w"

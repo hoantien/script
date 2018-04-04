@@ -1,0 +1,5 @@
+python camera_script.py -c g -e 150000000 -u preview
+python camera_script.py -c a1 a2 a3 a5 a4 -u preview -f 150
+python camera_script.py -c b -u preview -l -ghsv 0x200
+./take_snapshoot.sh AB
+./image.sh ../capture/29-2/

@@ -1,0 +1,26 @@
+adb shell "echo 1 > /sys/class/light_ccb/common/manual_control"
+adb shell "echo 6 0x0000 0x00 0x00 0x01 0x00 0x00 0x02  > /sys/class/i2c-adapter/i2c-11/11-0010/i2c_w"
+sleep 5
+while true
+do
+	adb shell "echo 4 0x0000 0x00 0x10 0x03 0x00 > /sys/class/i2c-adapter/i2c-11/11-0010/i2c_w"
+	adb shell "echo 8 0x0000 0x02 0x00 0x00 0x80 0x00 0x11 0x00 0x00 > /sys/class/i2c-adapter/i2c-11/11-0010/i2c_w"
+	sleep 5
+	adb shell "echo 8 0x0000 0x02 0x00 0x00 0x80 0x00 0x10 0x00 0x00 > /sys/class/i2c-adapter/i2c-11/11-0010/i2c_w"
+	##SNAPSHOT-
+	echo "Set UCID"
+	adb shell "echo 4 0x0000 0x00 0x10 0x05 0x00  > /sys/class/i2c-adapter/i2c-11/11-0010/i2c_w"
+	sleep 3
+	##this command will send number of capture
+	echo "BURST Request"
+	adb shell "echo 3 0x0000 0x10 0x00 0x01  > /sys/class/i2c-adapter/i2c-11/11-0010/i2c_w"
+	sleep 3
+
+	echo "SNAPSHOT"
+	adb shell "echo 8 0x0000 0x02 0x00 0x00 0x80 0x00 0x11 0x12 0x00  > /sys/class/i2c-adapter/i2c-11/11-0010/i2c_w"
+	sleep 5
+
+	echo "Stream OFF"
+	adb shell "echo 8 0x0000 0x02 0x00 0x00 0x80 0x00 0x10 0x12 0x00  > /sys/class/i2c-adapter/i2c-11/11-0010/i2c_w"
+	sleep 1
+done
